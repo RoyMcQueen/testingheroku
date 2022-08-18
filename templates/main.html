@@ -3,7 +3,7 @@
 <head>
     
     <title>Iris Plant</title>
-    <link rel = "stylesheet" href = "../static/css/styles.css"
+    <link rel = "stylesheet" href = "../static/css/styles.css">
    
 </head>
 <body>
@@ -31,28 +31,28 @@
             <input type="text" name = "feature 4" id = "input">
             <br>
             <br>
-            <input type = 'Submit' value = "RUN MODEL!" id="input">
+            <input type = "Submit" value = "RUN MODEL!" id="input">
         </form>
 
    
     </div>
 
-    <div> class = "content">
+    <div class = "content">
         <a href = "{{url_for('video')}}">Play Video</a>
     </div>
     
 
-    <div class = 'content'>
+    <div class = "content">
         {% if pred %}
             <h3>The result of your prediction is</h3>
             <h1>{{pred}}</h1>
         {% endif %}
 
-            {% if pred == 'Setosa' %}
+            {% if pred == 'setosa' %}
                 <img src = "../static/images/{{pred}}.webp" id = "img">
-            {% elif pred == 'Versicolor' %}
+            {% elif pred == 'versicolor' %}
                 <img src = "../static/images/{{pred}}.jpg" id = "img">
-            {% elif pred == 'Virginica' %}
+            {% elif pred == 'virginica' %}
                 <img src = "../static/images/{{pred}}.jpg" id = "img">
 
             {% endif %}

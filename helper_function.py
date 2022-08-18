@@ -11,11 +11,11 @@ def run_model(mylist): # the list will receive the independent variables (in thi
     predictions = model.predict(X_new)
 
     if predictions == 0:
-        name = 'Setosa'
+        name = 'setosa'
     elif predictions == 1:
-        name = 'Versicolor'
+        name = 'versicolor'
     elif predictions == 2:
-        name = 'Virginica'
+        name = 'virginica'
 
     else:
         name = ''
