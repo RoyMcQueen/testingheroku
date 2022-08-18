@@ -1,6 +1,4 @@
-from crypt import methods
 from flask import Flask, render_template, request, url_for
-
 from helper_function import run_model
 
 
